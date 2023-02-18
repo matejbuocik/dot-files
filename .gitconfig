@@ -1,0 +1,11 @@
+[user]
+	name = Matej Buocik
+	email = mbuocik@redhat.com
+[core]
+	editor = vim
+[alias]
+	b = branch
+	s = status
+	a = add
+	c = commit
+	sw = switch
