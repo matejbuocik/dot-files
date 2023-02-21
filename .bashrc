@@ -15,3 +15,6 @@ export PS1="$GREEN\u@\h$END:$BLUE\w$END${g}$GREEN\$ $END"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/devel
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Completion
+source ~/.git-completion.bash
