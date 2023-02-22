@@ -9,3 +9,5 @@
 	a = add
 	c = commit
 	sw = switch
+[init]
+	defaultBranch = main
