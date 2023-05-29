@@ -9,5 +9,9 @@
 	a = add
 	c = commit
 	sw = switch
+	l = log
+	p = push
+	r = rebase
+	ll = pull
 [init]
 	defaultBranch = main
