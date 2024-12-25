@@ -1,0 +1,15 @@
+[Arch Linux](https://wiki.archlinux.org/title/Installation_guide)
+  + don't forget to install NetworkManager
+[Hyprland](https://wiki.hyprland.org/Getting-Started/Installation/)
+  + hyprlock (lock screen)
+  + hypridle (idle management)
+  + hyprpaper (wallpaper)
+  + dunst (notification server)
+  + waybar (status bar)
+  + firefox + naezr/ShyFox theme
+  + dolphin (file manager)
+  + spotify + spicetify themes
+  + discord (webcord)
+  + qimgv (image viewer)
+  + vlc (video player)
+  + noto-fonts (-emoji, -extra) + Source Code Pro font

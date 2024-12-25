@@ -1,0 +1,104 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": "auto",
+    //"width": 1280,
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        //"bluetooth",
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "clock",
+        "custom/power"
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+        "active-only": false,
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "bluetooth": {
+        "format-on": "<span foreground=\"#98d3ee\"></span>",
+        "format-off": "<span foreground=\"#98d3ee\">󰂲</span>",
+        "format-disabled": "<span foreground=\"#98d3ee\">󰂲</span>",
+        "format-connected": "<span foreground=\"#98d3ee\">󰂱</span>",
+        "on-click": "blueman-manager",
+        "tooltip-format-connected": "{device_alias}"
+    },
+    "network": {
+        "format-wifi": "<span foreground=\"#87eab8\">{icon}</span> {bandwidthDownBytes}",
+        "format-disconnected": "󰤮",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr} ({essid} {signalStrength}%)",
+        "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨"],
+        "on-click": "nm-connection-editor"
+    },
+    "pulseaudio": {
+        "tooltip": false,
+        "format": "<span foreground=\"#98d3ee\">{icon}</span>  {volume}%",
+        "format-muted": "<span foreground=\"#98d3ee\"></span>",
+        "on-click-right":"pactl set-sink-mute 0 toggle",
+        "on-click":"pavucontrol",
+        "format-icons": {
+        "headphone": "",
+        "default": ""
+        }
+    },
+    "cpu": {
+        "format": "<span foreground=\"#2ecc71\"></span> {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "<span foreground=\"#a30093\"></span> {}%",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G"
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "critical-threshold": 80,
+        "format": "<span foreground=\"#cf6802\">○</span> {temperatureC}°C"
+    },
+    "backlight": {
+        "format": "<span foreground=\"#f1d8a5\">󰃠</span> {}%",
+	"tooltip": false
+    },
+    "battery": {
+        "states": {
+            "good": 80,
+            "warning": 30,
+            "critical": 20
+        },
+        "tooltip": false,
+        "format": "<span foreground=\"#c296eb\">{icon}</span>  {capacity}%",
+        "format-charging": "<span foreground=\"#c296eb\"></span> {capacity}%",
+        "format-plugged":"<span foreground=\"#c296eb\"></span> {capacity}%",
+        "format-alt": "<span foreground=\"#c296eb\">{icon}</span> {time}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "custom/power": {
+        "format" : " ⏻ ",
+	"tooltip": false,
+        "on-click": "systemctl suspend"
+    }
+}

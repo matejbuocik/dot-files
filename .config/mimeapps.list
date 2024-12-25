@@ -1,0 +1,7 @@
+[Added Associations]
+image/png=qimgv-2.desktop;
+
+[Default Applications]
+image/gif=qimgv.desktop
+image/jpg=qimgv.desktop
+image/png=qimgv-2.desktop;
