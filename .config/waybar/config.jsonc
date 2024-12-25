@@ -7,7 +7,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/spotify"
     ],
     "modules-center": [
         "hyprland/window"
@@ -32,6 +33,15 @@
             "active": "",
             "default": ""
         }
+    },
+    "custom/spotify": {
+        "format": " {}",
+        "exec": "~/.config/waybar/scripts/mediaplayer.sh",
+        "return-type": "json",
+        "on-click": "playerctl -p spotify play-pause || spotify",
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous",
+        "exec-if": "pgrep spotify"
     },
     "bluetooth": {
         "format-on": "<span foreground=\"#98d3ee\"></span>",
