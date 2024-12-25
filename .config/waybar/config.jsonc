@@ -109,6 +109,7 @@
     "custom/power": {
         "format" : " ⏻ ",
 	"tooltip": false,
-        "on-click": "systemctl suspend"
+        "on-click": "systemctl suspend",
+        "on-double-click": "systemctl poweroff"
     }
 }
