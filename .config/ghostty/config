@@ -1,5 +1,7 @@
 background-opacity = 0.8
-# MaterialDarker, xcodedarkhc, heeler, Espresso, Dracula+, cyberpunk
+# Dracula, Monokai Remastered
+# RetroLegends
+# MaterialDarker, xcodedarkhc
 # catppuccin-latte, BlulocoLight, AtomOneLight
-theme = catppuccin-latte
+theme = "Dracula"
 window-decoration = false
