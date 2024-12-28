@@ -9,6 +9,9 @@ alias la='ls -la'
 alias grep='grep --color=auto'
 alias df='df -h'
 alias ip='ip --color=auto'
+alias s='ssh -A'
+alias ..='cd ..'
+alias ...='cd ../..'
 
 # Functions
 function todo {
@@ -18,6 +21,24 @@ function bat {
     echo -n $(cat /sys/class/power_supply/BAT0/capacity)
     if [ $(cat /sys/class/power_supply/BAT0/status) = 'Charging' ]; then echo '+'; fi
 }
+
+# Git
+alias gb='git branch'
+alias gs='git status'
+alias gsh='git show'
+alias ga='git add'
+alias gc='git commit'
+alias gcl='git clone'
+alias gsw='git switch'
+alias gl='git log'
+alias gp='git push'
+alias gr='git rebase'
+alias gll='git pull'
+alias gg='git grep'
+alias gd='git diff'
+alias gbl='git blame'
+alias gcf='git commit --fixup=HEAD'
+alias gri='git rebase -i --autosquash'
 
 # Prompt
 GR="\[\e[0;32m\]"
