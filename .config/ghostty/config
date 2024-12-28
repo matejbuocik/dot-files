@@ -1,0 +1,5 @@
+background-opacity = 0.8
+# MaterialDarker, xcodedarkhc, heeler, Espresso, Dracula+, cyberpunk
+# catppuccin-latte, BlulocoLight, AtomOneLight
+theme = catppuccin-latte
+window-decoration = false
