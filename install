@@ -9,7 +9,10 @@
   + firefox + naezr/ShyFox theme
   + dolphin (file manager)
   + spotify + spicetify themes
-  + discord (webcord)
+  + webcord
   + qimgv (image viewer)
   + vlc (video player)
   + noto-fonts (-emoji, -extra) + Source Code Pro font
+  + tlp (power saving)
+
+yay -Sy --noconfirm hyprland hyprlock hypridle hyprpaper dunst waybar firefox dolphin spotify webcord qimgv vlc noto-fonts noto-fonts-emoji noto-fonts-extra tlp
