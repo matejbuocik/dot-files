@@ -24,12 +24,15 @@ function bat {
 
 # Git
 alias gb='git branch'
+alias gbd='git branch -d'
 alias gs='git status'
 alias gsh='git show'
 alias ga='git add'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gcl='git clone'
 alias gsw='git switch'
+alias gswc='git switch -c'
 alias gl='git log'
 alias gp='git push'
 alias gr='git rebase'
@@ -38,7 +41,8 @@ alias gg='git grep'
 alias gd='git diff'
 alias gbl='git blame'
 alias gcf='git commit --fixup=HEAD'
-alias gri='git rebase -i --autosquash'
+alias gri='git rebase -i --autosquash HEAD~~'
+alias gco='git checkout'
 
 # Prompt
 GR="\[\e[0;32m\]"
