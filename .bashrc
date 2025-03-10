@@ -43,6 +43,8 @@ alias gbl='git blame'
 alias gcf='git commit --fixup=HEAD'
 alias gri='git rebase -i --autosquash HEAD~~'
 alias gco='git checkout'
+alias grm='git rm'
+alias gmv='git mv'
 
 # Prompt
 GR="\[\e[0;32m\]"
