@@ -88,7 +88,7 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip": false,
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/power": {
